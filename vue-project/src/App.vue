@@ -2,12 +2,14 @@
   <div id="app">
     <Navbar :menuData="menus" />
     <Task />
+    <Todo />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
 import Task from './components/Task.vue'
+import Todo from './components/Todolist.vue'
 export default {
   name: 'App',
   data:function(){
@@ -22,7 +24,8 @@ export default {
   },
   components: {
     Navbar,
-    Task
+    Task,
+    Todo
   }
 }
 </script>
